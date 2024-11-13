@@ -1,0 +1,11 @@
+@import '../../../styles.scss';
+
+.player-wrapper {
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}

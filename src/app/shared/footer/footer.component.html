@@ -1,0 +1,12 @@
+<footer [ngClass]="{ 'footer-right-align': rightAlignFooter }" class="footer">
+    @if (this.communicationService.isLoggedIn) {
+    <a (click)="this.communicationService.setShowImprint(true) ">Imprint</a>
+    <a (click)="this.communicationService.setShowPrivacy(true)">Privacy</a>
+    }
+    @if(imprintActive != true && !this.communicationService.isLoggedIn) {
+    <a [routerLink]="['/imprint']">Imprint</a>
+    }
+    @if (privacyActive != true && !this.communicationService.isLoggedIn) {
+    <a [routerLink]="['/privacy']">Privacy</a>
+    }
+</footer>
