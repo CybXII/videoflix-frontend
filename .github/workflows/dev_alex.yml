@@ -30,7 +30,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
-        server: luft-alexander.de
+        server: videoflix.luft-alexander.de
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: 21
