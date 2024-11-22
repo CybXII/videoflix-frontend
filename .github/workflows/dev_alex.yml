@@ -30,9 +30,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
-        server: ${{secrets.ALEXHOST}}
-        username: ${{secrets.ALEXUSERNAME}}
-        password: ${{secrets.ALEXPASSWORD}}
+        server: videoflix.luft-alexander.de
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: 21
         protocol: ftps
-        server-dir: /
         local-dir: ./dist/videoflix_frontend/browser/
+        server-dir: /
