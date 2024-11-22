@@ -30,10 +30,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.1
       with:
-        server: ${{secrets.HOST}}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        server: ftpes://web03.dataforest.net
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        port: 21
         protocol: ftps
-        ca-cert: ${{ secrets.CACERTS }}
-        server-dir: /
         local-dir: ./dist/videoflix_frontend/browser/
+        server-dir: /
