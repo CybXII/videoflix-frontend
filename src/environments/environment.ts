@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://luft-alex.de',
+  baseUrl: 'https://videoflix.luft-alex.de/videoflix',
 };
